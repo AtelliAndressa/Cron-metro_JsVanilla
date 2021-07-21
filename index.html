@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="relogio">
+        <h1>Timer</h1>
+            <p>Digite o tempo que deseja:</p>
+            <input type="time" id="tempoVisor" step="0.001">
+        </div>
+
+        <div id="buttons">
+            <div>
+                <p><input type="button" class="iniciar" id="play" value="start" onclick="iniciarTimer()">
+            </div>
+            <div>  
+                <input type="button" class="iniciar" id="restart" value="start" onclick="restartTimer()">
+            </div>
+            <div>
+                <input type="button" id="stop" class="pausar" value="stop" onclick="pararTimer()">
+            </div>
+            <div>
+                <input type="button" id="reset" class="zerar" value="reset" onclick="apagarTimer()"></p>
+            </div>
+        </div>
+
+        <div class="rodandoCronometro">
+            <div id="respostaVisor"> </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
